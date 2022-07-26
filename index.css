@@ -1,17 +1,17 @@
 body{
     margin: 0vw;
-    overflow: auto;
-    zoom: 1;
-
+    overflow-x: hidden;
+   
 }
 #nav{
-   padding-left: 3%;
-    height: 3.8vw;
-    border-bottom: 0.11vw solid;
-    background-color: rgb(255, 255, 255);
-    color: #4b4c4d;
-    border-color: rgb(110, 108, 109);
-}
+    padding-left: 3%;
+     height: 3.8vw;
+     border-bottom: 0.11vw solid;
+     background-color: rgb(255, 255, 255);
+     color: #4b4c4d;
+     border-color: rgb(110, 108, 109);
+ }
+ 
  
 #cat{
     display: inline-block;
@@ -81,3 +81,8 @@ body{
     margin-bottom:0;
   }
   
+  img:hover {
+    filter: grayscale(100);
+    opacity:0.9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
