@@ -22,7 +22,6 @@ body{
 }
 
 
- 
 .footer-basic {
     padding:40px 0;
     background-color:#060505;
@@ -84,8 +83,9 @@ body{
   }
   
   #cat img:hover {
-    filter: grayscale(100);
-    opacity:0.9;
+    /*filter: grayscale(100);
+    opacity:0.9;*/
+    transform: scale(1.04);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
  
