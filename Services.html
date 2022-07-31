@@ -4,78 +4,86 @@
 <head>
     
     <link rel="icon" href="img/favicon.png" type="image/gif"/>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+
   <!-- mobile metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>KayMall</title>
-    <link rel="stylesheet" href="index.css">
+  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
+    <link rel="stylesheet" href="Services.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div id="nav">
-        <a href="index.html"><h5 style="display:inline-block; color: black;">  KayMall </h4></a>
-             
-         <a href="kw.html"> <h6 style="display:inline-block; margin-left: 70%;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-             <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-           </svg> KayWish</h4></a>
-           <a href="cart.html"> <h6 style="display:inline-block; margin-left: 2%;"><img src="img/cart.svg"/> Cart</h4> </a>
-            
-         <img  src="img/p.png" style=" width: 6%; margin-right: 2%; " /> </h6></h6></h5></div>
+        <a href="index.html"><h5 style="display:inline-block; color: black; margin-left: 2%;">KayMall </h5></a>
+        
+            <a href="kw.html"> <h6 style="display:inline-block; margin-left: 65%; color: black;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+              </svg> KayWish</h6></a>
+              <a href="cart.html"> <h6 style="display:inline-block; margin-left: 2%; color: black;"><img src="img/cart.svg"/> Cart </h4></a>
+           
+        <img  src="img/p.png" style=" width: 5.5%; margin-right: 4%; "/></h6></h6></div>
+    
+        <div class="container">
+            <h1>Our Services</h1>
+            <div class="row">
+                <div class="service">
+                    <i class="fa-solid fa-arrow-trend-down"></i>
+                    <h2>Price Drop Alert</h2>
+                    <p style="font-size:small; padding:8px">
+                        Notifies you about the price drop and sales on the product you have suscribed to recieve
+                        these updates about, in the popup.
+                        These notifications can be customized to be in app notifications, priority notifications as well
+                        as email alerts.  
+                    </p>
+                    <br>
+                    <br>
+    
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <h2>Autobuy</h2>
+                    <p style="font-size:small; padding:8px">
+                        The system will ask you to select the desired prices and a shipping address in the and places order
+                        as soon as the prices hit that value, on the click of a single button.</p>
+    
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <h2>Stock refill alert</h2>
+                    <p style="font-size:small; padding:8px">Using Kotak's AutoBuy, you can also place order or subscribe to price drop alerts
+                        for items that are currently out of stock- the process is simple, click on Kaywish and the feature would 
+                        ask you whether you want to place order for the specific product once it is re-stocked.
+                        Select an address and we place the order as soon as the product comes back in stock.</p>
+    
+                </div>
+               
+            </div>
+        </div>
+        <!--content end--> 
+        <br> <br>
+        <center><img onmouseover="this.style.filter='brightness(50%)'" onmouseout="this.style.filter='brightness(100%)'" src="img/slide1.jpg" width="100%"  style="border: 2% solid;">
+        </center>
+        <!--footer start-->
+        <div class="footer-basic" style="background-color: rgb(15, 14, 14);">
+            <footer>
+                
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html">Home</a></li>
+                    <li class="list-inline-item"><a href="Services.html">Services</a></li>
+                    <li class="list-inline-item"><a href="About.html">About</a></li>
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+                <p class="copyright">KOTAK © 2022</p>
+            </footer>
+        </div>
+ </body>
 
-       <h1 style="text-align: center;"> KOTAK's AUTOBUY</h1>
 
-       <h3 style="color: red; margin: 3%;">Price Drop Alerts</h3>
-       <p style="margin: 3%;">The price drop feature of the Kotak Autobuy can notify the customers
-        about the price drop and sales on the product they have suscribed to recieve
-        these updates about.
-        These notifications can be customized to be in app notifications, priority notifications as well
-        as email alerts.  
-       </p>
-        <img src="img/pd.jpg" style="margin-left:15%;"/>
-
-       <br>
-       <br>
-       <h3 style="color: red; margin: 3%;">AutoBuy</h3>
-       <p style="margin: 3%;"> The AutoBuy feature helps the users to place orders for the products
-        that they are not willing to buy at the current price but will be willing to buy it if the price
-        reaches to a certain desired value.
-        The system asks the users to select the desired prices and a shipping address and places order
-        as soon as the prices hit that value on click of a single button.
-       </p>
-       <img src="img/ab.jpg" style="margin-left:20%;"/>
-
-
-       <br>
-       <br>
-       <h3 style="color: red; margin: 3%;">Order Out of Stock Products</h3>
-       <p style="margin: 3%;"> Using Kotak's AutoBuy, you can also place order or suscribe to price drop alerts
-        for items that are currently out of stock- the process is simple, click on Kaywish and the feature would 
-        ask you whether you want to place order for the specific product once it comes back in stock.
-        The user selects an address and we place the order as soon as the product comes back in stock.
-       </p>
-       <img src="img/oos.jpg" style="margin-left:8%;"/>
-
-
-
-
-    <div class="footer-basic" style="background-color: rgb(15, 14, 14); margin-top: 3%;">
-        <footer>
-            
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html">Home</a></li>
-                <li class="list-inline-item"><a href="Services.html">Services</a></li>
-                <li class="list-inline-item"><a href="About.html">About</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p class="copyright">KOTAK © 2022</p>
-        </footer>
-    </div>
-
-
-</body>
 </html>
