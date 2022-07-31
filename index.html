@@ -11,8 +11,10 @@
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>KayMall</title>
     <link rel="stylesheet" href="index.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -25,23 +27,59 @@
               </svg> KayWish</h6></a>
               <a href="cart.html"> <h6 style="display:inline-block; margin-left: 2%; color: black;"><img src="img/cart.svg"/> Cart </h4></a>
            
-        <img  src="img/p.png" style=" width: 5.5%; margin-right: 4%; "/></h6></h6></div>
+        <img  src="img/p.png" style=" width: 5.5%; margin-right: 4%; "/></h6></h6>
+    </div> <!--end of header-->
     
-  
+    <!--owl carousel-->
+        <div class="owl-carousel owl-theme" style="padding-top: 2.5%; padding-bottom:1%">
+            <div class="item"> <img src="img/HomeBlue.png"> </div>
+            <div class="item"><a href="pro1.html"><img style="border-radius: 27px;" src="img/HomeOrange.jpg"></a></div>
+            <div class="item"> <img src="img/HomeGreen.png"> </div>
+            <div class="item"> <img src="img/HomeYellow.png"> </div>
+            <div class="item"> <img src="img/HomeRed.png"> </div>
+            
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+        <script type="text/javascript">
+                    $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            dots: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2.2
+                },
+                1000:{
+                    items:2.2
+                }
+            }
+        })
+        </script>
+<!--owl carousel end-->
+
+
+        <!--
 <div style="text-align: center; margin-bottom: 2%; margin-top: 1%;">
     <a href="pro1.html">
     <img align="middle" src="img/Home.jpg"  style="width: 50%; "/> </a>
 </div>
+-->
 
+<p style="font-family:roboto;font-weight:1000; font-size:large; padding-left: 18.5%;">Latest Products</p>
 
 <div id="cat">
     <a href="pro2.html">
-    <img align="middle" src="img/cat2.jpg"  style="width: 20%; margin-left: 3%;"/> </a>
+    <img align="middle" src="img/cat2.jpg"  style="width: 20%; margin-left: 3%; border-radius: 2%;"/> </a>
     <a href="pro3.html">
-    <img align="middle" src="img/cat3.jpg"  style="width: 20%; margin-left: 3%;"/></a>
+    <img align="middle" src="img/cat3.jpg"  style="width: 20%; margin-left: 3%; border-radius: 2%;"/></a>
     <a href="pro4.html">
-    <img align="middle" src="img/cat4.jpg"  style="width: 20%; margin-left: 3%;"/></a>
+    <img align="middle" src="img/cat4.jpg"  style="width: 20%; margin-left: 3%; border-radius: 2%;"/></a>
 
 </div>
 <div >
