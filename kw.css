@@ -15,8 +15,8 @@ body{
 
 
 #wlb{
-  font-weight: bolder;
-  font-size: small;
+  font-weight: 400;
+  font-size:14px;
  
 }
 
@@ -80,8 +80,10 @@ body{
     margin-bottom:0;
   }
   img:hover {
+    /*
     filter: grayscale(100);
-    opacity:0.9;
+    opacity:0.9;*/
+    transform: scale(1.03);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
@@ -90,3 +92,6 @@ body{
     padding: 0.7%;
     font-weight: 700;
   }
+
+
+  
