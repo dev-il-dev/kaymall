@@ -58,11 +58,11 @@
                                     <div class="col-6">
                                         <ul class="pagination justify-content-end set_quantity">
                                             <li class="page-item">
-                                                <button class="page-link" onclick="decreaseNumber('textbox','itemval')"><i class="fa-solid fa-minus"></i></button>
+                                                <button class="page-link" onclick="decreaseNumber(0)"><i class="fa-solid fa-minus"></i></button>
                                             </li>
-                                            <li class="page-item"><input type="text" name="" class="page-link" value="1" id="textbox"></li>
+                                            <li class="page-item"><input type="text" name="" class="page-link" value="1" id="incdec0"></li>
                                             <li class="page-item">
-                                                <button class="page-link" onclick="increaseNumber('textbox','itemval')"> <i class="fa-solid fa-plus"></i> </button>
+                                                <button class="page-link" onclick="increaseNumber(0)"> <i class="fa-solid fa-plus"></i> </button>
                                             </li>
                                           </ul>
                                     </div>
@@ -74,7 +74,7 @@
 
                                     </div>
                                     <div class="col-4 d-flex justify-content-end price_money">
-                                        <h3>&#x20b9; <span id="itemval">2000.00</span></h3>
+                                        <h3>&#x20b9; <span id="itemval0">2000.00</span></h3>
                                     </div>
 
                                 </div>
@@ -107,11 +107,11 @@
                                     <div class="col-6">
                                         <ul class="pagination justify-content-end set_quantity">
                                             <li class="page-item">
-                                                <button class="page-link" onclick="decreaseNumber('textbox1','itemval1')"><i class="fa-solid fa-minus"></i></button>
+                                                <button class="page-link" onclick="decreaseNumber(1)"><i class="fa-solid fa-minus"></i></button>
                                             </li>
-                                            <li class="page-item"><input type="text" name="" class="page-link" value="1" id="textbox1"></li>
+                                            <li class="page-item"><input type="text" name="" class="page-link" value="1" id="incdec1"></li>
                                             <li class="page-item">
-                                                <button class="page-link" onclick="increaseNumber('textbox1','itemval1')"> <i class="fa-solid fa-plus"></i> </button>
+                                                <button class="page-link" onclick="increaseNumber(1)"> <i class="fa-solid fa-plus"></i> </button>
                                             </li>
                                           </ul>
                                     </div>
@@ -158,11 +158,11 @@
                                     <div class="col-6">
                                         <ul class="pagination justify-content-end set_quantity">
                                             <li class="page-item">
-                                                <button class="page-link" onclick="decreaseNumber('textbox2','itemval2')"><i class="fa-solid fa-minus"></i></button>
+                                                <button class="page-link" onclick="decreaseNumber(2)"><i class="fa-solid fa-minus"></i></button>
                                             </li>
-                                            <li class="page-item"><input type="text" name="" class="page-link" value="1" id="textbox2"></li>
+                                            <li class="page-item"><input type="text" name="" class="page-link" value="1" id="incdec2"></li>
                                             <li class="page-item">
-                                                <button class="page-link" onclick="increaseNumber('textbox2','itemval2')"> <i class="fa-solid fa-plus"></i> </button>
+                                                <button class="page-link" onclick="increaseNumber(2)"> <i class="fa-solid fa-plus"></i> </button>
                                             </li>
                                           </ul>
                                     </div>
@@ -210,11 +210,11 @@
                                     <div class="col-6">
                                         <ul class="pagination justify-content-end set_quantity">
                                             <li class="page-item">
-                                                <button class="page-link" onclick="decreaseNumber('textbox3','itemval3')"><i class="fa-solid fa-minus"></i></button>
+                                                <button class="page-link" onclick="decreaseNumber(3)"><i class="fa-solid fa-minus"></i></button>
                                             </li>
-                                            <li class="page-item"><input type="text" name="" class="page-link" value="1" id="textbox3"></li>
+                                            <li class="page-item"><input type="text" name="" class="page-link" value="1" id="incdec3"></li>
                                             <li class="page-item">
-                                                <button class="page-link" onclick="increaseNumber('textbox3','itemval3')"> <i class="fa-solid fa-plus"></i> </button>
+                                                <button class="page-link" onclick="increaseNumber(3)"> <i class="fa-solid fa-plus"></i> </button>
                                             </li>
                                           </ul>
                                     </div>
@@ -295,6 +295,8 @@
         </div>
 
     </div>
+                                                           
+                                                           
 <br>    <center><img onmouseover="this.style.filter='brightness(50%)'" onmouseout="this.style.filter='brightness(100%)'" src="img/slide1.jpg" width="100%"  style="border: 2% solid;">
     </center>
 
@@ -311,7 +313,7 @@
         </footer>
     </div>
 
-    <!-- Optional JavaScript -->
+   <!-- Optional JavaScript -->
 <!-- Popper.js first, then Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
@@ -323,33 +325,32 @@ var shipping_charge = document.getElementById('shipping_charge');
 var total_cart_amt = document.getElementById('total_cart_amt');
 var tax = document.getElementById('tax');
 
-const decreaseNumber = (incdec, itemprice) => {
-var itemval = document.getElementById(incdec);
-var itemprice = document.getElementById(itemprice);
-
-const tempprice = parseInt(itemprice.value);
+const decreaseNumber = (i) => {
+var itemval = document.getElementById('incdec'+i);
+var itemprice = document.getElementById('itemval'+i);
 
 console.log( itemprice.innerHTML);
-// console.log(itemval.value);
+console.log(itemval.value);
 if(itemval.value <= 1){
 itemval.value = 1;
 alert('Negative quantity not allowed. Delete item instead?');
 }else{
+itemprice.innerHTML  = parseInt(itemprice.innerHTML) / itemval.value;
 itemval.value = parseInt(itemval.value) - 1;
+itemprice.innerHTML  = parseInt(itemprice.innerHTML) * itemval.value;
 itemval.style.background = '#fff';
 itemval.style.color = '#000';
 
-itemprice.innerHTML  = parseInt(itemprice.innerHTML) - 2000;
-product_total_amt.innerHTML  = parseInt(product_total_amt.innerHTML) - 2000;
+product_total_amt.innerHTML  = parseInt(product_total_amt.innerHTML) - parseInt(itemprice.innerHTML) / itemval.value;
 
 total_cart_amt.innerHTML  = parseInt(product_total_amt.innerHTML) + parseInt(shipping_charge.innerHTML) + parseInt(tax.innerHTML) - 200;
 }
 }
 
 
-const increaseNumber = (incdec, itemprice) => {
-var itemval = document.getElementById(incdec);
-var tempprice = itemprice = document.getElementById(itemprice);
+const increaseNumber = (i) => {
+var itemval = document.getElementById('incdec'+i);
+var itemprice = document.getElementById('itemval'+i);
 // console.log(itemval.value);
 if(itemval.value >= 5){
 itemval.value = 5;
@@ -357,10 +358,11 @@ alert('max 5 allowed');
 itemval.style.background = 'red';
 itemval.style.color = '#fff';
 }else{
-itemval.value = parseInt(itemval.value) + 1;
+    itemprice.innerHTML  = parseInt(itemprice.innerHTML) / itemval.value;
+    itemval.value = parseInt(itemval.value) + 1;
+    itemprice.innerHTML  = parseInt(itemprice.innerHTML) * itemval.value;
 
-itemprice.innerHTML  = parseInt(itemprice.innerHTML) + 2000;
-product_total_amt.innerHTML  = parseInt(product_total_amt.innerHTML) + 2000.00;
+product_total_amt.innerHTML  = parseInt(product_total_amt.innerHTML) + parseInt(itemprice.innerHTML) / itemval.value;
 
 total_cart_amt.innerHTML  = parseInt(product_total_amt.innerHTML) + parseInt(shipping_charge.innerHTML)+parseInt(tax.innerHTML)-200;
 }
