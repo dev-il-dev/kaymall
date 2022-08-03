@@ -13,11 +13,14 @@ body{
     color: #c3c6cb;
     border-color: rgb(214, 209, 210);
 }
-
+img{
+  height:auto;max-width:100%
+}
 
 #promp img{
     display: inline-block;
     margin-left: 6%;
+    height:auto;max-width:100%
 }
 
 #prom button{
@@ -31,16 +34,18 @@ body{
 
 
 }
+
+
 #abc{
-  margin-left: 30%;
-  margin-top: 2%;
+  margin-left: 35%;
+  margin-top: 1%;
 }
 #abc button{
   border-radius: 50%;
   color: black;
-  font-weight: 700;
+  
   border: none;
-  background-color: rgb(246, 242, 242);
+  font-weight: 600;
   
 }
 #popup{
@@ -112,49 +117,37 @@ body{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   #promp button:hover,
-  #prom button:hover,   #wld button:hover,   #abc button:hover,   #autobuyconfirmed button:hover
-   {
+  #prom button:hover,   #proceed:hover{
    
-    filter: grayscale(100);
     opacity:0.9;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   
   }
 
-  #myform input:hover{
-    background-color: blue;
-  }
+
 
 
 /* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-}
+
 
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
   position: fixed;
-  
-  margin-left: 30%;
-  margin-top: 5%;
+  z-index: 100;
+  margin-left: 35%;
+  margin-top: 2%;
   align-items: center;
   border: 3px solid #e5e5e5;
-  max-width: 500px;
+  width:35%;
   padding: 2%;
   background-color: white;
+  box-shadow:100%;
 }
 
-
+#abc button{
+  padding-left: 1.3%; padding-right: 1.3%;
+}
 
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {

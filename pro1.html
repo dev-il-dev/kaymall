@@ -30,7 +30,7 @@
       <img  src="img/p.png" style=" width: 5.5%; margin-right: 4%; "/></h6></h6></div>
   
 
-            <div id="promp" style="float: left; width: 50%; margin-top: 0.5%;">
+            <div id="promp" style="float: left; width: 50%; margin-top: 0.5%; height:auto;max-width:100%">
     
     
 
@@ -70,52 +70,53 @@
       </svg> KAYWISH </button>
 
 </div>
+    </div>
 
-<div id="popup">  
+<div id="popup" style="z-index: 999;">  
 
 <div class="form-popup" id="myForm">
 
        
-      <h4 style="text-align: left; font-weight: bolder; float: left; width: 20%;">KayWish  </h3>
-      <button  class="btn cancel" onclick="closeForm()" style="color: black; float: right;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" style="vertical-align: top;">
+      <h5 style="text-align: left; font-weight: bolder; float: left; width: 20%;">KayWish  </h5>
+      <button  class="btn cancel" onclick="closeForm()"  style="color: black; float: right;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" style="vertical-align: top;">
         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
       </svg></button>
         <br>
         <br>
-        <br>
-       <input type="radio" onmouseover="this.style.background-color='blue'" onclick="closeForm(), openFormwld(),bl()" style="border-color: black;  background-color: rgb(255, 0, 0); border-bottom: 1%; padding: 1%; border-radius: 50%;" name="Wishlist"> <label for="Wishlist">Wishlist</label>
-       <p style="color: grey; font-size:smaller; text-align: left;">Add item in the Wishlist and get notified of the price drops or if the item comes back in stock.</p>
-   
+       <input type="checkbox" id="Wishlistb"  style="border-color: black;  background-color: rgb(255, 0, 0); border-bottom: 1%; padding: 1%; border-radius: 50%;" name="Wishlist"> <label for="Wishlist">Wishlist</label>
+       <p style="color: grey; font-size:smaller; text-align: left; margin-left: 4%;">Add item in the Wishlist and get notified of the price drops or if the item comes back in stock.</p>
+
+<br>
+    <div style="background-color: rgb(185, 184, 184); height: 0.06vw;"></div>
     <br>
-    <br>
-    <div style="background-color: grey; height: 0.11vw;"></div>
-    <br>
-    <button onclick="closeForm(), openFormabc(),bl()" style="border: none; background-color: white; padding: 1%;"><h5 style="text-align: left;">AutoBuy</h4>
-        <p style="color: grey; font-size:smaller; text-align: left;">Automatically places order when the price reaches to your desired value or if the
-             item comes back in stock.</p></button>
-   
+    <input type="checkbox" id="AutoBuyb" style="border-color: black;  background-color: rgb(255, 0, 0); border-bottom: 1%; padding: 1%; border-radius: 50%;" Name="AutoBuy"> <label for="Autobuy">Autobuy</label>
+          <p style="color: grey; font-size:smaller; text-align: left; margin-left: 4%;">Automatically places order when the price reaches to your desired value or if the
+             item comes back in stock.</p>
+   <br>
+             <center><button onclick="wlab()" style="padding: 1%; padding-left: 40%; padding-right: 40%; border-radius:7px; background-color: black; color: white; 
+              font-weight: 700;">PROCEED </button>
+            </center>
   </div>
 
   <div class="form-popup" id="wld">
-    <button type="button" class="btn cancel" onclick="closeForm()" style="color: black;float: right;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" style="vertical-align: top;">
-        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-      </svg></button>
+    <button  class="btn cancel" onclick="closeForm()"  style="color: black; float: right;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" style="vertical-align: top;">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+    </svg></button>
       <br>
       <br>
-   <center> <svg style="color: green;" xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+   <center> <svg style="color: green;" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
       </svg></center>
       <br>
       <br>
-      <h3 style="color: rgb(0, 0, 0);  text-align: center;"> ADDED TO WISHLIST </h3>
-      <br>
-        <h6 style="color: rgb(84, 83, 83); font-size:smaller; text-align: center;">Automatic price drop
-        alerts will be sent to your registered email ID. You can check this product in the 
-    KayWish tab and configure AutoBuy/Price drop alert preferences.</h6>
+      <h6 style="color: rgb(0, 0, 0);  text-align: center; font-weight: 700;"> ADDED TO WISHLIST </h6>
+
+        <p style="color: grey; font-size:smaller;  text-align: center;">Automatic price drop
+          alerts will be sent to your registered Email-ID.</p>
    <br>
-   <center><button onclick="closeForm()" style="padding: 1%; padding-left: 10%; padding-right: 10%; border-radius:7px; background-color: black; color: white; 
+   <center><button id="proceed" onclick="closeForm()" style="padding: 1%; padding-left: 40%; padding-right: 40%; border-radius:7px; background-color: black; color: white; 
       font-weight: 700;">PROCEED </button>
     </center>
   
@@ -127,26 +128,39 @@
         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
       </svg></button>
       <br>
-      <br>
-      <p style=" color: rgb(79, 78, 78); margin-top: -5%;">Size</p>
-    <a ><button onclick="instocksize()" style="font-weight: 700;"> 6 </button></a>
-    <a ><button onclick="outofstocksize()" style="color: rgb(133, 127, 127);"> 7 </button></a>
-    <a ><button onclick="outofstocksize()" style="color: rgb(133, 127, 127);"> 8 </button></a>
-    <a ><button onclick="outofstocksize()" style="color: rgb(133, 127, 127);">  9 </button></a>
-    <a ><button onclick="outofstocksize()" style="color: rgb(133, 127, 127);"> 10 </button></a>
-    <a ><button onclick="instocksize()"> 11 </button></a>
+      <p style=" color: rgb(79, 78, 78); margin-top: -7%;">Size</p>
+    <a ><button id="proceed"  onclick="instocksize()" style="padding-left: 2.5%; padding-right: 2.5%;background-color: rgb(228, 235, 232);"> 6 </button></a>
+    <a ><button id="proceed"  onclick="outofstocksize()" style="color: rgb(133, 127, 127); margin-left: 1%; padding-left: 2%; padding-right: 2%;background-color: rgb(228, 235, 232);"> 7 </button></a>
+    <a ><button id="proceed"  onclick="outofstocksize()" style="color: rgb(133, 127, 127); margin-left: 1%; padding-left: 2%; padding-right: 2%;background-color: rgb(228, 235, 232);"> 8 </button></a>
+    <a ><button id="proceed"  onclick="outofstocksize()" style="color: rgb(133, 127, 127); margin-left: 1%; padding-left: 2%; padding-right: 2%;background-color: rgb(228, 235, 232);">  9 </button></a>
+    <a ><button id="proceed"  onclick="outofstocksize()" style="color: rgb(133, 127, 127); margin-left: 1%; padding-left: 2%; padding-right: 2%;background-color: rgb(228, 235, 232);"> 10 </button></a>
+    <a ><button id="proceed"  onclick="instocksize()" style="padding-left: 2%; padding-right: 2%;background-color: rgb(228, 235, 232);"> 11 </button></a>
      
     <br>
     <br>
     <div id="instock">
-    <h6>Your desired autobuy price</h6>
+
+      <h6>Your desired autobuy price</h6>
+    <p style="font-size:x-small; color: gray;"> (Order will be placed when the price falls below your specified price)</p>
+    <input id="desiredprice" type="number" style="width: 100%;">
+    <br>
     
-    <input id="desiredprice" type="number">
-    <button onclick="document.getElementById('desiredprice').value='2700'"; style="color: rgb(133, 127, 127); border-radius: 7px;"> Rs.2700 </button>
-    <button onclick="document.getElementById('desiredprice').value='2600'"; style="color: rgb(133, 127, 127); border-radius: 7px;"> Rs.2600 </button>
-    <button onclick="document.getElementById('desiredprice').value='2500'"; style="color: rgb(133, 127, 127); border-radius: 7px;"> Rs.2500 </button>
+    <button onclick="document.getElementById('desiredprice').value='2700'"; style="color: rgb(133, 127, 127); border-radius: 7px; font-size: small;"> Rs.2700 </button>
+    <button onclick="document.getElementById('desiredprice').value='2600'"; style="color: rgb(133, 127, 127); border-radius: 7px; font-size: small;"> Rs.2600 </button>
+    <button onclick="document.getElementById('desiredprice').value='2500'"; style="color: rgb(133, 127, 127); border-radius: 7px; font-size: small;"> Rs.2500 </button>
   </div>
      <div id="outofstock" style="display: none;">
+   
+      <h6>Your desired autobuy price</h6>
+      <p style="font-size:x-small; color: gray;"> (Order will be placed when the price falls below your specified price)</p>
+      
+      <input id="desiredprice2" type="number" style="width: 100%;">
+      <br>
+      
+      <button onclick="document.getElementById('desiredprice2').value='2700'"; style="color: rgb(133, 127, 127); border-radius: 7px; font-size: small;"> Rs.2700 </button>
+      <button onclick="document.getElementById('desiredprice2').value='2600'"; style="color: rgb(133, 127, 127); border-radius: 7px; font-size: small;"> Rs.2600 </button>
+      <button onclick="document.getElementById('desiredprice2').value='2500'"; style="color: rgb(133, 127, 127); border-radius: 7px; font-size: small;"> Rs.2500 </button>
+    
       <img src="img/popupoos.jpg" style="width: 95%;"/>
      </div>
    
@@ -154,22 +168,23 @@
    <br>
    
     <h6>Select Address</h6>
-    <br>
-    <p id="address" style="color: rgb(103, 99, 99); font-size: smaller; text-align: left;"> Indian Institute of Engineering Science and Technology, Shibpur · Address
-      Botanic Garden, Howrah, West Bengal 711103  </p> 
-      <textarea id="newaddress" style="display:none; color: rgb(103, 99, 99); font-size: smaller; " contenteditable="true" placeholder="Add New Address"></textarea>
-      <input id="addsavebtn" type="button" onclick="editaddress()" ondblclick="editsavebtn()" value="Change" style="color: rgb(255, 255, 255); border:none; font-weight: 600;background-color:rgb(0, 0, 0);">
-       <br><br>
-      <center><button onclick="confirmautobuy()" id="confirmautobuy" style="padding: 1%; padding-left: 9%; padding-right: 9%; border-radius:7px; background-color: black; color: white; 
+
+    <p id="address" style="color: rgb(103, 99, 99); font-size: smaller; text-align: left;"> Indian Institute of Engineering Science and Technology, Shibpur </p> 
+      <p id="newaddress" style="display:none; color: rgb(103, 99, 99); font-size: smaller; width: 360px;" contenteditable="true" placeholder="Add New Address">ADD NEW ADDRESS</p>
+    
+      <input id="addsavebtn" type="button" onclick="editaddress()" ondblclick="editsavebtn()" value="Change" style="color: rgb(23, 8, 237); border:none; font-weight: 600;background-color:rgb(255, 255, 255);">
+       <br>
+       <br>
+      <center><button onclick="confirmautobuy()" id="confirmautobuy" style="padding: 0.5%; padding-left: 30%; padding-right: 30%; border-radius:7px; background-color: black; color: white; 
         font-weight: 700;">CONFIRM AUTOBUY</button>
       </center>
     </div>
     
     <div class="form-popup" id="autobuyconfirmed">
       <button type="button" class="btn cancel" onclick="closeForm()" style="color: black;float: right;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" style="vertical-align: top;">
-          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-        </svg></button>
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+      </svg></button>
         <br>
         <br>
      <center> <svg style="color: green;" xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
@@ -179,37 +194,37 @@
         <br>
         <h3 style="color: rgb(0, 0, 0);  text-align: center;"> AUTOBUY set succesfully </h3>
         <br>
-          <h6 style="color: rgb(84, 83, 83); font-size:smaller; text-align: center;">You will be sent a confirmation 
-            notice when the item reaches your desire price.</h6>
+          <h6 style="color: rgb(84, 83, 83); font-size:smaller; text-align: center;">A confirmation 
+            message will be when the item reaches your desired price.</h6>
             <br>
             <center><button onclick="closeForm()" style="padding: 1%; padding-left: 10%; padding-right: 10%; border-radius:7px; background-color: black; color: white; 
               font-weight: 700;">PROCEED </button>
             </center>
     
     </div>
-
-
-
 </div>
 
 
+
+
+
 <br>
-<div style="margin-top: 32%; margin-left: 2%; margin-right: 55%; " id="ab">
+<div style="margin-top: 32%; margin-left: 3%; margin-right: 55%; " id="ab">
     <h5>About Product</h5>
     <p style=" color: gray; font-size:90%;">From hoops staple to urban street legend, the Nike AIR MAX 270 takes another step forward into shoe iconography. Amplified features from the outsole to the branding add dramatic expression to the storied look while Nike React tech assists with a smooth ride. Stand out to fit in.</p>
 </div>
 
-
-<div>
+</div>
+<div id="reviews" style="z-index: 998;">
   <h1 style="display:inline-block; width: 50%; margin: 5%; margin-left:8%; font-weight: bolder; color: rgb(104, 104, 104);">“Always buy a good pair of shoes and a good bed – if you're not in one, you're in the other.”</h3>
   <img src="img/reviews.jpg" style="display:inline-block;" width="30%" />
-
+  <br>
+<br><center><a href="pro2.html"><img onmouseover="this.style.filter='brightness(100%)'" onmouseout="this.style.filter='brightness(50%)'" src="img/slide1.jpg" width="100%"  style="border: 2% solid; filter: brightness(50%);"></a>
+</center>
 
 </div>
-<br>
-<br>
-<center><img onmouseover="this.style.filter='brightness(50%)'" onmouseout="this.style.filter='brightness(100%)'" src="img/slide1.jpg" width="100%"  style="border: 2% solid;">
-</center>
+
+
 
 
     <div class="footer-basic" style="background-color: rgb(15, 14, 14); " id="ft">
@@ -232,7 +247,7 @@
 
 <script>
     const btn = document.getElementById('ac');
-
+    
 btn.addEventListener('click', function onClick(event) {
   // 👇️ change background color
   event.target.style.backgroundColor = 'red';
@@ -241,10 +256,13 @@ btn.addEventListener('click', function onClick(event) {
   // event.target.style.color = 'white';
 });
 function openForm() {
+
   document.getElementById("myForm").style.display = "block";
+  document.body.style.overflow="hidden";
 }
 function openFormwld() {
   document.getElementById("wld").style.display = "block";
+  document.body.style.overflow="hidden";
 }
 
 function outofstocksize() {
@@ -259,6 +277,7 @@ function instocksize() {
 
 function openFormabc() {
   document.getElementById("abc").style.display = "block";
+  document.body.style.overflow="hidden";
 }
 
 function editaddress() {
@@ -273,6 +292,9 @@ if(document.getElementById("addsavebtn").value == "Save Address")
   {document.getElementById("addsavebtn").value = "Address Added";}
 }
 function closeForm() {
+  document.getElementById("newaddress").style.display = "none";
+  document.getElementById("address").style.display = "block";
+  document.getElementById("addsavebtn").value = "Change";
   document.getElementById("myForm").style.display = "none";
   document.getElementById("wld").style.display = "none";
   document.getElementById("abc").style.display = "none";
@@ -280,19 +302,60 @@ function closeForm() {
   document.getElementById("ab").style.opacity = "1";
     document.getElementById("promp").style.opacity = "1";
     document.getElementById("prom").style.opacity = "1";
+    document.getElementById("reviews").style.opacity = "1";
+    document.getElementById("Wishlistb").checked=false; 
+    document.getElementById("AutoBuyb").checked=false; 
+    document.body.style.backgroundColor = "white";
+    document.body.style.overflow="visible";
 }
 
 function confirmautobuy() {
+  document.getElementById("newaddress").style.display = "none";
+  document.getElementById("address").style.display = "block";
+  document.getElementById("addsavebtn").value = "Change";
+
   document.getElementById("abc").style.display = "none";
-  document.getElementById("autobuyconfirmed").style.display = "block";
+  document.getElementById("abc").style.display = "none";document.getElementById("autobuyconfirmed").style.display = "block";
   bl();
+ 
+  document.body.style.overflow="visible";
 }
+
 
 
 function bl() {
     document.getElementById("ab").style.opacity = "0.12";
+
     document.getElementById("promp").style.opacity = "0.12";
     document.getElementById("prom").style.opacity = "0.12";
+    document.getElementById("reviews").style.opacity = ".12";
+   
+    document.body.style.backgroundColor = "gray";
+    
+       
 }
+
+
+function wlab()  
+    {  
+        var w = document.getElementById("Wishlistb"); 
+        var a = document.getElementById("AutoBuyb"); 
+        if(w.checked && a.checked)
+        alert("Please select a single option") 
+           else if(w.checked)  
+                { 
+                   closeForm(); 
+                  openFormwld(); 
+                  bl();
+        }  
+        else if(a.checked)  
+                { 
+                   closeForm(); 
+                  openFormabc(); 
+                  bl();
+        }  
+        else
+        alert("Please select an option")
+}  
 </script>
 </html>

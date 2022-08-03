@@ -15,9 +15,23 @@ body{
 
 
 #wlb{
-  font-weight: 400;
-  font-size:15px;
+  font-weight: bolder;
+  font-size: small;
  
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  margin-left: 35%;
+  margin-top: 1%;
+  align-items: center;
+  border: 3px solid #e5e5e5;
+  width:35%;
+  padding: 2%;
+  background-color: white;
+  box-shadow:100%;
 }
 
 .footer-basic {
@@ -79,10 +93,12 @@ body{
     color:rgb(255, 255, 255);
     margin-bottom:0;
   }
-  img:hover {
-    /*
-    filter: grayscale(100);
-    opacity:0.9;*/
+  #wl img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  #ab img:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
@@ -93,5 +109,31 @@ body{
     font-weight: 700;
   }
 
+  
+#abc button{
+  border-radius: 50%;
+  color: black;
+  
+  border: none;
+  font-weight: 600;
+  
+}
+#popup{
+  font-weight: 500;
+}
+  
 
+
+#abc button{
+  padding-left: 1.3%; padding-right: 1.3%;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+#popup{
+  font-weight: 500;
+}
   

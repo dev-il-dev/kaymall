@@ -27,7 +27,135 @@
        
     <img  src="img/p.png" style=" width: 5.5%; margin-right: 4%; "/></h6></h6></div>
 
-
+    <div class="form-popup" id="myForm">
+            
+                   
+        <h5 style="text-align: left; font-weight: bolder; float: left; width: 20%;">KayWish  </h5>
+        <button  class="btn cancel" onclick="closeForm()"  style="color: black; float: right;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" style="vertical-align: top;">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg></button>
+          <br>
+          <br>
+         <input type="checkbox" id="Wishlistb"  style="border-color: black;  background-color: rgb(255, 0, 0); border-bottom: 1%; padding: 1%; border-radius: 50%;" name="Wishlist"> <label for="Wishlist">Wishlist</label>
+         <p style="color: grey; font-size:smaller; text-align: left; margin-left: 4%;">Add item in the Wishlist and get notified of the price drops or if the item comes back in stock.</p>
+  
+  <br>
+      <div style="background-color: rgb(185, 184, 184); height: 0.06vw;"></div>
+      <br>
+      <input type="checkbox" id="AutoBuyb" style="border-color: black;  background-color: rgb(255, 0, 0); border-bottom: 1%; padding: 1%; border-radius: 50%;" Name="AutoBuy"> <label for="Autobuy">Autobuy</label>
+            <p style="color: grey; font-size:smaller; text-align: left; margin-left: 4%;">Automatically places order when the price reaches to your desired value or if the
+               item comes back in stock.</p>
+     <br>
+               <center><button onclick="wlab()" style="padding: 1%; padding-left: 40%; padding-right: 40%; border-radius:7px; background-color: black; color: white; 
+                font-weight: 700;">PROCEED </button>
+              </center>
+    </div>
+  
+    <div class="form-popup" id="wld">
+      <button  class="btn cancel" onclick="closeForm()"  style="color: black; float: right;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" style="vertical-align: top;">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+      </svg></button>
+        <br>
+        <br>
+     <center> <svg style="color: green;" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+        </svg></center>
+        <br>
+        <br>
+        <h6 style="color: rgb(0, 0, 0);  text-align: center; font-weight: 700;"> ADDED TO WISHLIST </h6>
+  
+          <p style="color: grey; font-size:smaller;  text-align: center;">Automatic price drop
+            alerts will be sent to your registered Email ID.</p>
+     <br>
+     <center><button id="proceed" onclick="closeForm()" style="padding: 1%; padding-left: 40%; padding-right: 40%; border-radius:7px; background-color: black; color: white; 
+        font-weight: 700;">PROCEED </button>
+      </center>
+    
+    </div>
+  
+    <div class="form-popup" id="abc">
+      <button type="button" class="btn cancel" onclick="closeForm()" style="color: black;float: right;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" style="vertical-align: top;">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg></button>
+        <br>
+        <p style=" color: rgb(79, 78, 78); margin-top: -7%;">Size</p>
+      <a ><button id="proceed"  onclick="instocksize()" style="padding-left: 2.5%; padding-right: 2.5%;background-color: rgb(228, 235, 232);"> 6 </button></a>
+      <a ><button id="proceed"  onclick="outofstocksize()" style="color: rgb(133, 127, 127); margin-left: 1%; padding-left: 2%; padding-right: 2%;background-color: rgb(228, 235, 232);"> 7 </button></a>
+      <a ><button id="proceed"  onclick="outofstocksize()" style="color: rgb(133, 127, 127); margin-left: 1%; padding-left: 2%; padding-right: 2%;background-color: rgb(228, 235, 232);"> 8 </button></a>
+      <a ><button id="proceed"  onclick="outofstocksize()" style="color: rgb(133, 127, 127); margin-left: 1%; padding-left: 2%; padding-right: 2%;background-color: rgb(228, 235, 232);">  9 </button></a>
+      <a ><button id="proceed"  onclick="outofstocksize()" style="color: rgb(133, 127, 127); margin-left: 1%; padding-left: 2%; padding-right: 2%;background-color: rgb(228, 235, 232);"> 10 </button></a>
+      <a ><button id="proceed"  onclick="instocksize()" style="padding-left: 2%; padding-right: 2%;background-color: rgb(228, 235, 232);"> 11 </button></a>
+       
+      <br>
+      <br>
+      <div id="instock">
+  
+        <h6>Your desired autobuy price</h6>
+      <p style="font-size:x-small; color: gray;"> (Order will be placed when the price falls below your specified price)</p>
+      <input id="desiredprice" type="number" style="width: 100%;">
+      <br>
+      
+      <button onclick="document.getElementById('desiredprice').value='2700'"; style="color: rgb(133, 127, 127); border-radius: 7px; font-size: small;"> Rs.2700 </button>
+      <button onclick="document.getElementById('desiredprice').value='2600'"; style="color: rgb(133, 127, 127); border-radius: 7px; font-size: small;"> Rs.2600 </button>
+      <button onclick="document.getElementById('desiredprice').value='2500'"; style="color: rgb(133, 127, 127); border-radius: 7px; font-size: small;"> Rs.2500 </button>
+    </div>
+       <div id="outofstock" style="display: none;">
+     
+        <h6>Your desired autobuy price</h6>
+        <p style="font-size:x-small; color: gray;"> (Order will be placed when the price falls below your specified price)</p>
+        
+        <input id="desiredprice2" type="number" style="width: 100%;">
+        <br>
+        
+        <button onclick="document.getElementById('desiredprice2').value='2700'"; style="color: rgb(133, 127, 127); border-radius: 7px; font-size: small;"> Rs.2700 </button>
+        <button onclick="document.getElementById('desiredprice2').value='2600'"; style="color: rgb(133, 127, 127); border-radius: 7px; font-size: small;"> Rs.2600 </button>
+        <button onclick="document.getElementById('desiredprice2').value='2500'"; style="color: rgb(133, 127, 127); border-radius: 7px; font-size: small;"> Rs.2500 </button>
+      
+        <img src="img/popupoos.jpg" style="width: 95%;"/>
+       </div>
+     
+  
+     <br>
+     
+      <h6>Select Address</h6>
+  
+      <p id="address" style="color: rgb(103, 99, 99); font-size: smaller; text-align: left;"> Indian Institute of Engineering Science and Technology, Shibpur </p> 
+        <p id="newaddress" style="display:none; color: rgb(103, 99, 99); font-size: smaller; width: 360px;" contenteditable="true" placeholder="Add New Address">ADD NEW ADDRESS</p>
+      
+        <input id="addsavebtn" type="button" onclick="editaddress()" ondblclick="editsavebtn()" value="Change" style="color: rgb(23, 8, 237); border:none; font-weight: 600;background-color:rgb(255, 255, 255);">
+         <br>
+         <br>
+        <center><button onclick="confirmautobuy()" id="confirmautobuy" style="padding: 0.5%; padding-left: 30%; padding-right: 30%; border-radius:7px; background-color: black; color: white; 
+          font-weight: 700;">CONFIRM AUTOBUY</button>
+        </center>
+      </div>
+      
+      <div class="form-popup" id="autobuyconfirmed">
+        <button type="button" class="btn cancel" onclick="closeForm()" style="color: black;float: right;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" style="vertical-align: top;">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg></button>
+          <br>
+          <br>
+       <center> <svg style="color: green;" xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg></center>
+          <br>
+          <br>
+          <h3 style="color: rgb(0, 0, 0);  text-align: center;"> AUTOBUY set succesfully </h3>
+          <br>
+            <h6 style="color: rgb(84, 83, 83); font-size:smaller; text-align: center;">A confirmation 
+              message will be when the item reaches your desired price.</h6>
+              <br>
+              <center><button onclick="closeForm()" style="padding: 1%; padding-left: 10%; padding-right: 10%; border-radius:7px; background-color: black; color: white; 
+                font-weight: 700;">PROCEED </button>
+              </center>
+      
+      </div>
+  </div>
 
     <div id="t" style="margin:12%; margin-bottom: 2%; margin-top: 3%; ">
 
@@ -40,45 +168,164 @@
 
 
         <div id="wl" >
-            <img src="img/cat2.jpg" style="display:inline-block; width: 20%; margin-left: 12%;">
+            <img src="img/cat6.png" style="display:inline-block; width: 20%; margin-left: 12%;">
             <img src="img/cat3.jpg" style="display:inline-block; width: 20%; margin-left: 1%;">
             <img src="img/cat4.jpg" style="display:inline-block; width: 20%; margin-left: 1%;">
             <img src="img/cat5.png" style="display:inline-block; width: 20%; margin-left: 1%;">
         </div>
+        <div id="popup" style="z-index: 999;">  
+
+         
+            
     
         <div id="wlb" >
-            <button id="r1" style="display:inline-block; width: 20%; margin-left: 12%; color: white; background-color: black;" onclick="document.getElementById('r1').innerHTML = 'REMOVED'">CANCEL AUTOBUY</button>
-            <button id="r2" style="display:inline-block; width: 20%; margin-left: 1.1%; color: white; background-color: black;" onclick="document.getElementById('r2').innerHTML = 'REMOVED'">CANCEL AUTOBUY</button>
-            <button id="r3" style="display:inline-block; width: 20%;margin-left: 1.1%; color: white; background-color: black;" onclick="document.getElementById('r3').innerHTML = 'REMOVED'">CANCEL AUTOBUY</button>
-            <button id="r4" style="display:inline-block; width: 20%;margin-left: 1.1%; color: white; background-color: black;" onclick="document.getElementById('r4').innerHTML = 'REMOVED'">CANCEL AUTOBUY</button>
-        </div>
+            <button id="r1" style="display:inline-block; width: 20%; margin-left: 12%; color: white; background-color: black;" onclick="document.getElementById('r1').innerHTML = 'AUTOBUY CANCELLED'">CANCEL AUTOBUY</button>
+            <button id="r2" style="display:inline-block; width: 20%; margin-left: 1.1%; color: white; background-color: black;" onclick="document.getElementById('r2').innerHTML = 'AUTOBUY CANCELLED'">CANCEL AUTOBUY</button>
+            <button id="r3" style="display:inline-block; width: 20%;margin-left: 1.1%; color: white; background-color: black;" onclick="document.getElementById('r3').innerHTML = 'AUTOBUY CANCELLED'">CANCEL AUTOBUY</button>
+            <button id="r4" style="display:inline-block; width: 20%;margin-left: 1.1%; color: white; background-color: black;" onclick="document.getElementById('r4').innerHTML = 'AUTOBUY CANCELLED'">CANCEL AUTOBUY</button>
+            <button onclick="bl(), openFormabc()" style="display:inline-block; width: 20%; margin-left: 12%;margin-top: 0.5%; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">CONFIGURE AUTOBUY</button>
+        <button onclick="bl(), openFormabc()" style="display:inline-block; width: 20%;margin-left: 1.1%;margin-top: 0.5%; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">CONFIGURE AUTOBUY</button>
+        <button onclick="bl(), openFormabc()" style="display:inline-block; width: 20%;margin-left: 1.1%;margin-top: 0.5%; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">CONFIGURE AUTOBUY</button>
+        <button onclick="bl(), openFormabc()" style="display:inline-block; width: 20%;margin-left: 1.1%;margin-top: 0.5%; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">CONFIGURE AUTOBUY</button>    
+    </div>
         
-        <div id="wl" >
-            <img src="img/cat6.png" style="display:inline-block; width: 20%; margin-left: 12%; margin-top: 4%;">
-        </div>
-        <div id="wlb" >
-            <button id="r5" style="display:inline-block; width: 19.35%; margin-left: 12.3%; color: white; background-color: black;" onclick="document.getElementById('r5').innerHTML = 'REMOVED'">CANCEL AUTOBUY</button>
-        </div>
+        
     
-      <br>
-      <br>
-      <center><img onmouseover="this.style.filter='brightness(50%)'" onmouseout="this.style.filter='brightness(100%)'" src="img/slide1.jpg" width="100%"  style="border: 2% solid;">
-      </center>
-    
-    
-        <div class="footer-basic" style="background-color: rgb(15, 14, 14);">
-            <footer>
+        
+
+            
+            
+            
+            
+            <br>
+          
+            <br><center><a href="pro2.html"><img onmouseover="this.style.filter='brightness(100%)'" onmouseout="this.style.filter='brightness(50%)'" src="img/slide1.jpg" width="100%"  style="border: 2% solid; filter: brightness(50%);"></a>
+            </center>
+          
+            
+            
+            
+            
+                <div class="footer-basic" style="background-color: rgb(15, 14, 14); " id="ft">
+                    <footer>
+                        
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="index.html">Home</a></li>
+                            <li class="list-inline-item"><a href="Services.html">Services</a></li>
+                            <li class="list-inline-item"><a href="About.html">About</a></li>
+                            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        </ul>
+                        <p class="copyright">KOTAK © 2022</p>
+                    </footer>
+                </div>
+            
+            </div>
+            
+            
+            </body>
+            
+            <script>
+               
+            function openForm() {
+            
+              document.getElementById("myForm").style.display = "block";
+              document.body.style.overflow="hidden";
+            }
+            function openFormwld() {
+              document.getElementById("wld").style.display = "block";
+              document.body.style.overflow="hidden";
+            }
+            
+            function outofstocksize() {
+              document.getElementById("outofstock").style.display = "block";
+              document.getElementById("instock").style.display = "none";
+            }
+            function instocksize() {
+              document.getElementById("outofstock").style.display = "none";
+              document.getElementById("instock").style.display = "block";
+            }
+            
+            
+            function openFormabc() {
+              document.getElementById("abc").style.display = "block";
+              document.body.style.overflow="hidden";
+            }
+            
+            function editaddress() {
+              
+              document.getElementById("address").style.display = "none";
+              document.getElementById("newaddress").style.display = "block";
+              document.getElementById("addsavebtn").value = "Save Address";
+              
+            }
+            function editsavebtn() {
+            if(document.getElementById("addsavebtn").value == "Save Address")
+              {document.getElementById("addsavebtn").value = "Address Added";}
+            }
+            function closeForm() {
+              document.getElementById("newaddress").style.display = "none";
+              document.getElementById("address").style.display = "block";
+              document.getElementById("addsavebtn").value = "Change";
+              document.getElementById("myForm").style.display = "none";
+              document.getElementById("wld").style.display = "none";
+              document.getElementById("abc").style.display = "none";
+              document.getElementById("autobuyconfirmed").style.display = "none";
+              document.getElementById("wlb").style.opacity = "1";
+                document.getElementById("t").style.opacity = "1";
+                document.getElementById("wl").style.opacity = "1";
+                document.getElementById("Wishlistb").checked=false; 
+                document.getElementById("AutoBuyb").checked=false; 
+                document.body.style.backgroundColor = "white";
+                document.body.style.overflow="visible";
+            }
+            
+            function confirmautobuy() {
+              document.getElementById("newaddress").style.display = "none";
+              document.getElementById("address").style.display = "block";
+              document.getElementById("addsavebtn").value = "Change";
+            
+              document.getElementById("abc").style.display = "none";
+              document.getElementById("abc").style.display = "none";document.getElementById("autobuyconfirmed").style.display = "block";
+              bl();
+             
+              document.body.style.overflow="visible";
+            }
+            
+            
+            
+            function bl() {
+                document.getElementById("wlb").style.opacity = "0.12";
+            
+                document.getElementById("t").style.opacity = "0.12";
+                document.getElementById("wl").style.opacity = "0.12";
+           
+               
+                document.body.style.backgroundColor = "gray";
                 
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="index.html">Home</a></li>
-                    <li class="list-inline-item"><a href="Services.html">Services</a></li>
-                    <li class="list-inline-item"><a href="About.html">About</a></li>
-                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                </ul>
-                <p class="copyright">KOTAK © 2022</p>
-            </footer>
-        </div>
-    
-    
-    
-        </body>
+                   
+            }
+            
+            
+            function wlab()  
+                {  
+                    var w = document.getElementById("Wishlistb"); 
+                    var a = document.getElementById("AutoBuyb"); 
+                    if(w.checked && a.checked)
+                    alert("Please select a single option") 
+                       else if(w.checked)  
+                            { 
+                               closeForm(); 
+                              openFormwld(); 
+                              bl();
+                    }  
+                    else if(a.checked)  
+                            { 
+                               closeForm(); 
+                              openFormabc(); 
+                              bl();
+                    }  
+                    else
+                    alert("Please select an option")
+            }  
+            </script>
+            </html>
