@@ -17,6 +17,11 @@ img{
   height:auto;max-width:100%
 }
 
+h4 {
+  font-weight: bold;
+  font-size: 170%;
+}
+
 #promp img{
     display: inline-block;
     margin-left: 6%;
